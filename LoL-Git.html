@@ -4,6 +4,28 @@
     <meta charset="utf-8">
     <title>League of Legends</title>
     <link href="style.css" rel="stylesheet">
+    <script>
+        function Kiertekeles(){
+            var ere = 0;
+            if(document.getElementById("hel1").checked == true)
+                {
+                    ere++;
+                }
+            else if(document.getElementById("hel2").checked == true)
+                {
+                    ere++;
+                }
+            else if(document.getElementById("hel3").checked == true)
+                {
+                    ere++;
+                }
+            else
+                {
+                    ere = 0;
+                }
+            document.getElementById("mo").innerHTML = "3 / "+ere+" jó válasza lett";
+        }
+    </script>
 </head>
 <body>
     <h1>League Of Legends</h1>
@@ -24,18 +46,19 @@
     <div id="b4">
         <h2>Kérdőív</h2>
         <p>Hány játékos játszhat egy csapatban?</p>
-        <input type="radio" id="het1" name="val" value="het1"><label for="het1">3</label><br>
-        <input type="radio" id="hel1" name="val" value="hel1"><label for="hel1">5</label><br>
-        <input type="radio" id="het2" name="val" value="het2"><label for="het2">4</label>
+        <input type="radio" id="het1" name="val1" value="het1"><label for="het1">3</label><br>
+        <input type="radio" id="hel1" name="val1" value="hel1"><label for="hel1">5</label><br>
+        <input type="radio" id="het2" name="val1" value="het2"><label for="het2">4</label>
         <p>Mennyi különböző pályán játszahtnak a játékosok?</p>
-        <input type="radio" id="het3" name="val" value="het3"><label for="het3">2</label><br>
-        <input type="radio" id="hel2" name="val" value="hel2"><label for="hel2">3</label><br>
-        <input type="radio" id="het4" name="val" value="het4"><label for="het4">1</label>
+        <input type="radio" id="het3" name="val2" value="het3"><label for="het3">2</label><br>
+        <input type="radio" id="hel2" name="val2" value="hel2"><label for="hel2">3</label><br>
+        <input type="radio" id="het4" name="val2" value="het4"><label for="het4">1</label>
         <p>Hogy nevezi a játék a játékosokat?</p>
-        <input type="radio" id="het5" name="val" value="het5"><label for="het5">Player</label><br>
-        <input type="radio" id="hel3" name="val" value="hel3"><label for="hel3">Legenda</label><br>
-        <input type="radio" id="het6" name="val" value="het6"><label for="het6">Idéző</label><br>
-        <input type="submit" value="Kiertekeles">
+        <input type="radio" id="het5" name="val3" value="het5"><label for="het5">Player</label><br>
+        <input type="radio" id="hel3" name="val3" value="hel3"><label for="hel3">Legenda</label><br>
+        <input type="radio" id="het6" name="val3" value="het6"><label for="het6">Idéző</label><br>
+        <input type="submit" value="Kiertekeles" onclick="Kiertekeles()">
+        <p id="mo"></p>
     </div>
 </body>
 </html>
