@@ -1,0 +1,12 @@
+body{
+    background-color: darkgreen;
+    color: darkgoldenrod;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+div{
+    margin-left: 100px;
+    margin-right: 100px;
+}
